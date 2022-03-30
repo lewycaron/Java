@@ -1,0 +1,40 @@
+
+public class programa {
+	
+	public static void main(String[] args) {
+		//Tipos primitivos
+		//int numero = 100;
+		//numero.
+		
+		//Classe - > variável é um objeto
+		String texto = "Só sei que nada sei.(Sócrates)";
+		int comprimento = texto.length();
+		System.out.println("Comprimento:" + comprimento);
+		
+		String subTexto = texto.substring(5 , 30);
+		System.out.println("Sub: " + subTexto);
+		
+		char caractere = texto.charAt(9);
+		System.out.println("Char: " + caractere);
+		
+		for (int i = 0; i < texto.length(); i++) {
+			System.out.println(texto.charAt(i));
+		}
+		//remove os espaçõs entre as palavras
+		String[] palavras = texto.split(" ");
+		for (String palavra : palavras) {
+			System.out.println(palavra);	
+		}
+		//substitui espaço pelo hifen
+		String textoHifen = texto.replace(" ","-");
+		System.out.println(textoHifen);
+		// substitui espaço por tabulacao
+		String textoTab = texto.replace(" ","		");
+		System.out.println(textoTab);
+		
+		String[] palavrasTab = texto.split(" ");
+		for (String palavra : palavrasTab) {
+			System.out.println(palavra);	
+		}
+	}
+}
